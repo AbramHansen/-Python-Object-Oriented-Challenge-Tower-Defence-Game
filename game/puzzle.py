@@ -29,6 +29,7 @@ class Puzzle:
         return self.word
 
     def getDisplayWord(self):
+        self.displayWord = ""
         for char in self.correct:
             self.displayWord += char
         return self.displayWord

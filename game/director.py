@@ -14,7 +14,7 @@ class Director:
             self.console.displayMessage(self.puzzle.getDisplayWord())
             self.console.displayParachute(self.jumper.getNumParachutePieces())
             
-            userGuess = self.console.getGuess()
+            userGuess = str(self.console.getGuess())
             if (not self.puzzle.isCorrect(userGuess)):
                 self.jumper.cutParachute()
             

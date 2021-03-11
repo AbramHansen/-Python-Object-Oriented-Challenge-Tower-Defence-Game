@@ -11,3 +11,5 @@ class Jumper:
         self.guesses[-1]
     def cutParachute(self):
         self.parachutePieces -= 1
+    def getNumParachutePieces(self):
+        return self.parachutePieces
