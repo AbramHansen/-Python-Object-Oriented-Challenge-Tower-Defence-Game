@@ -1,19 +1,24 @@
 class Console:
     #Where the parachute is drawn and where the letters appear on screen
 
+    def __init__(self):
+        pass
 
     def getInput(self, message):
-        message = input("Guess a letter [a-z]: ")
-        return message
+        return(input(message))
 
     def displayMessage(self, message):
-        #print(message)
-        pass
-    def getGuess(self, guess): 
+        print("Guess a letter [a-z]: ")
+
+    def getGuess(self): 
         #ask user for a character then return it
         #message used to ask for the char must match assignment instruction
-        guess = message
-        print(guess)
+        while True:
+            try:
+                x = (input("Guess a letter [a-z]: "))
+                break
+            except ValueError:
+                print("Invalid. Please enter a letter (A-Z)")
 
     
     def displayParachute(self, parachutePieces):
