@@ -1,2 +1,1 @@
-# cse210-tc05
-The fifth team challenge
+# Python Object Oriented Challenge Tower Defence Game
